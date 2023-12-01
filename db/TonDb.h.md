@@ -266,3 +266,47 @@ class TonDbImpl {
 
 ### Summary
 The code defines classes and structures for managing smart contracts and transactions in the Telegram Blockchain novel system. The classes encapsulate functionality related to smart contract databases, transactions, and the overall database system. The use of key-value storage and dynamic bags of cells suggests a focus on efficient data management for smart contract execution.
+
+
+
+
+Absolutely, let's break down some key C++ concepts and elements present in this code to help you understand them better:
+
+### 1. **Header Guards**
+   - The `#pragma once` directive is a form of header guard. It ensures that the content of the header file is included only once in a translation unit. Header guards prevent multiple inclusions and potential issues with redefinition.
+
+### 2. **Header Includes**
+   - `#include` statements are used to bring in external header files. In this code, headers for various components such as `vm/cellslice.h`, `td/db/KeyValue.h`, and others are included. These headers provide necessary declarations and functionality for the classes used in the code.
+
+### 3. **Namespace**
+   - The `namespace vm` statement encapsulates the classes and functions within the `vm` namespace. This helps in organizing and avoiding naming conflicts with other code.
+
+### 4. **Forward Declarations and Type Aliases**
+   - `class SmartContractDbImpl;` is a forward declaration for the `SmartContractDbImpl` class. It tells the compiler that such a class exists without providing its full definition.
+   - `using SmartContractDb = std::unique_ptr<SmartContractDbImpl>;` creates an alias `SmartContractDb` for `std::unique_ptr<SmartContractDbImpl>`. This makes code more readable and allows for easier changes in the future.
+
+### 5. **Struct Definition: `SmartContractMeta`**
+   - `struct SmartContractMeta { ... };` defines a structure named `SmartContractMeta`. It contains data members (`stats` and `type`) that store information about the smart contract.
+
+### 6. **Enum Definition: `BagOfCellsType`**
+   - `enum BagOfCellsType { Dynamic, Static } type{Static};` declares an enumeration type named `BagOfCellsType` with two values: `Dynamic` and `Static`. It also declares a member variable `type` of this enumeration type, initialized to `Static`.
+
+### 7. **Class Definition: `SmartContractDbImpl`**
+   - This class encapsulates functionality related to managing smart contracts in the database.
+   - Public and private member functions are defined, including methods for retrieving roots, getting metadata, setting roots, and managing transactions.
+   - The constructor (`SmartContractDbImpl(...)`) is responsible for initializing the class members.
+
+### 8. **Friend Classes**
+   - `friend class SmartContractDiff;` and `friend class TonDbTransactionImpl;` allows the specified classes to access private members of `SmartContractDbImpl`. This is useful for maintaining encapsulation while granting specific access.
+
+### 9. **SmartContractDiff Class**
+   - Represents a class for managing differences in smart contracts, allowing for transaction-like operations.
+
+### 10. **TonDbTransactionImpl Class**
+   - Manages transactions for the Telegram Blockchain Database. It includes methods for beginning, committing, and aborting transactions.
+
+### 11. **TonDbImpl Class**
+   - Represents the main class for managing the Telegram Blockchain Database. It provides methods for beginning, committing, and aborting transactions.
+
+### Next Steps:
+   - If there's a specific part of the code you'd like to dive deeper into or if you have questions about specific C++ concepts, feel free to ask. We can explore topics like classes, templates, smart pointers, and more!
