@@ -1,0 +1,93 @@
+.
+├── arithops.cpp
+├── arithops.h
+├── atom.cpp
+├── atom.h
+├── boc-writers.h
+├── boc.cpp
+├── boc.h
+├── box.hpp
+├── cellops.cpp
+├── cellops.h
+├── cellparse.hpp
+├── cells
+│   ├── Cell.cpp
+│   ├── Cell.h
+│   ├── CellBuilder.cpp
+│   ├── CellBuilder.h
+│   ├── CellHash.cpp
+│   ├── CellHash.h
+│   ├── CellSlice.cpp
+│   ├── CellSlice.h
+│   ├── CellString.cpp
+│   ├── CellString.h
+│   ├── CellTraits.cpp
+│   ├── CellTraits.h
+│   ├── CellUsageTree.cpp
+│   ├── CellUsageTree.h
+│   ├── CellWithStorage.h
+│   ├── DataCell.cpp
+│   ├── DataCell.h
+│   ├── ExtCell.h
+│   ├── LevelMask.cpp
+│   ├── LevelMask.h
+│   ├── MerkleProof.cpp
+│   ├── MerkleProof.h
+│   ├── MerkleUpdate.cpp
+│   ├── MerkleUpdate.h
+│   ├── PrunnedCell.h
+│   ├── UsageCell.h
+│   ├── VirtualCell.h
+│   └── VirtualizationParameters.h
+├── cells.h
+├── cellslice.h
+├── continuation.cpp
+├── continuation.h
+├── contops.cpp
+├── contops.h
+├── cp0.cpp
+├── cp0.h
+├── db
+│   ├── BlobView.cpp
+│   ├── BlobView.h
+│   ├── CellHashTable.h
+│   ├── CellStorage.cpp
+│   ├── CellStorage.h
+│   ├── DynamicBagOfCellsDb.cpp
+│   ├── DynamicBagOfCellsDb.h
+│   ├── StaticBagOfCellsDb.cpp
+│   ├── StaticBagOfCellsDb.h
+│   ├── TonDb.cpp
+│   └── TonDb.h
+├── debugops.cpp
+├── debugops.h
+├── dict.cpp
+├── dict.h
+├── dictops.cpp
+├── dictops.h
+├── dispatch.cpp
+├── dispatch.h
+├── excno.hpp
+├── fmt.hpp
+├── large-boc-serializer.cpp
+├── log.h
+├── memo.cpp
+├── memo.h
+├── opctable.cpp
+├── opctable.h
+├── stack.cpp
+├── stack.hpp
+├── stackops.cpp
+├── stackops.h
+├── tonops.cpp
+├── tonops.h
+├── tree.txt
+├── tupleops.cpp
+├── tupleops.h
+├── utils.cpp
+├── utils.h
+├── vm.cpp
+├── vm.h
+└── vmstate.h
+
+3 directories, 88 files
